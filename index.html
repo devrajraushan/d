@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            
+        }
+        #num{
+            width: 190px;
+            height: 25px;
+            outline: none;
+            border: 1px solid gray;
+            border-radius: 2px;
+            padding-left: 10px;
+            
+           
+        }
+        input[type=submit]{
+            width: 80px;
+            height: 30px;
+            margin-top: 20px;
+            border: 1px solid dodgerblue;
+            background-color: rgb(28, 110, 231);
+            color: white;
+            font-size: 20px;
+            outline: none;
+            
+        }
+        form{
+            width: 250px;
+            height: 150px;
+            background-color: rgb(66, 228, 228);
+            margin: 15px auto;
+            text-align: center;
+            padding: 25px;
+            box-shadow: 0px 0px 9px #ddd;
+        }
+        #result{
+            font-size: 20px;
+            color: rgb(17, 10, 10);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            padding: 0;
+            margin: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 24px;
+            color: rgb(101, 10, 153);
+        }
+    </style>
+</head>
+<body >
+    <form>
+        <h1>Age Years Finder</h1>
+    <input type="number" id="num" placeholder="Years">     
+    <input type="submit" onclick=" return age()">
+    <p id="result"></p>
+   </form>
+    <script>
+        function age(){
+            var x=document.getElementById("num").value;
+            var y=2021;
+            var z=y-x;
+            document.getElementById("result").innerHTML="You Are Now"+" "+z+" "+ "Years Old.";
+            return false;
+            
+            
+        }
+    </script>
+</body>
+</html>
